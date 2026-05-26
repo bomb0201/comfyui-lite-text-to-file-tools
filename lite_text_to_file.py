@@ -155,7 +155,8 @@ class WriteToTextFile:
             else:
                 action = "Wrote to"
                 
-            status = f"✓ {action} {file_path}"
+            # status = f"✓ {action} {file_path}"
+            status = f"{file_path}"
             return (status,)
             
         except Exception as e:
